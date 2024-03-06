@@ -10,26 +10,18 @@ const btn1 = document.getElementById("button1");
 const btn2 = document.getElementById("button2");
 const btn3 = document.getElementById("button3");
 
-function makeBackBlue() {
-  document.body.style.backgroundColor = "blue";
-}
-
-function makeBackPink() {
-    document.body.style.backgroundColor = "pink";
-}
-
-function makeBackBrown() {
-    document.body.style.backgroundColor = "brown";
+function changeBackColor(color) {
+  document.body.style.backgroundColor = color;
 }
 
 btn1.addEventListener("click", () => {
-  makeBackBlue();
+    changeBackColor("blue");
 });
 
 btn2.addEventListener("dblclick", () => {
-    makeBackPink();
+    changeBackColor("pink");
   });
 
 btn3.addEventListener("mouseover", () => {
-    makeBackBrown();
+    changeBackColor("brown");
   });
